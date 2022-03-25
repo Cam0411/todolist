@@ -1,0 +1,112 @@
+* 
+{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content__box
+{
+    overflow: hidden;
+    background: linear-gradient(135deg, #4AB1FF, #2D5CFE);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container 
+    {
+     
+       max-width: 500px;
+       width: 100%;
+       height: auto;
+       min-height: 300px;
+       border-radius: 5px;
+       padding: 10px;
+       .title 
+       {
+           font-size: 30px;
+           color: #fff;
+           font-weight: 700;
+           text-align: center;
+           margin-bottom: 20px;
+        
+       }
+       .input__box 
+       {
+           max-width: 300px;
+           width: 100%;
+           background: #fff;
+           margin-left: auto;
+           margin-right: auto;
+           display: flex;
+           justify-content: space-between;
+           margin-bottom: 40px;
+           border-radius: 5px;
+           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+           input 
+           {
+               padding: 7px 10px;
+               max-width: 250px;
+               width: 100%;
+               border: none;
+               outline: none;
+               border-radius: 5px;
+           }
+           i 
+           {
+            padding: 7px 14px;
+            background: #4AB1FF;
+            color: #fff;
+            cursor: pointer;
+           }
+       }
+       .list__box  
+       {
+           max-width: 400px;
+           width: 100%;
+           margin-left: auto;
+           margin-right: auto;
+           background: #fff;
+           min-height: 40px;
+           padding: 10px;
+           border-radius: 5px;
+           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+           overflow: hidden;
+           li 
+           {
+               list-style: none;
+             width: 100%; 
+             display: flex;
+             justify-content: space-between;
+             text-align: center;
+             text-transform: capitalize;
+             border-bottom: 2px solid #0004;
+             padding-bottom: 8px;
+             margin-bottom: 20px;
+             font-size: 14px;
+             cursor: pointer;
+             color: #183153;
+             &:hover span {
+                transform: translateX(0px);
+                
+             }
+             span 
+             {
+                 text-align: right;
+                 color: red;
+                 cursor: pointer;
+                 transform: translateX(30px);
+                 transition: 0.4s;
+             }
+           }
+       }
+    }
+}
+.date 
+{
+    position: absolute;
+}
