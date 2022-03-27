@@ -88,6 +88,7 @@
              padding-bottom: 8px;
              margin-bottom: 20px;
              font-size: 14px;
+             margin-top: 15px;
              cursor: pointer;
              color: #183153;
              &:hover span {
@@ -97,7 +98,7 @@
              span 
              {
                  text-align: right;
-                 color: red;
+                 color: #4AB1FF;
                  cursor: pointer;
                  transform: translateX(30px);
                  transition: 0.4s;

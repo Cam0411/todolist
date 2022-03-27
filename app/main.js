@@ -2,8 +2,9 @@
 const search = document.querySelector(".src__box")
 const add = document.querySelector(".plus")
 const todo = document.querySelector(".list__box")
+const clearAll = document.querySelector(".clearall")
 add.style.opacity = 0.6
-
+var value = 0
 search.addEventListener("keyup",() => {
     const data = search.value
     if(data.trim() != 0){
@@ -54,9 +55,10 @@ function showdata(){
     }else {
      listArr = JSON.parse(getlocal)
     }
+
     let newtag = ''
     listArr.forEach((element,index) => {
-        newtag += `<li>${element}<span onclick="deletedata(${index})"><i class="fa-solid fa-trash-can"></i></span></li>`
+        newtag += `<li><p class="list">${element}</p><span onclick="deletedata(${index})"><i class="fa-solid fa-trash-can"></i></span></li>`
     });
     todo.innerHTML = newtag
     search.value = ''
@@ -70,3 +72,10 @@ function deletedata(index){
     localStorage.setItem('new todo',JSON.stringify(listArr))
     showdata()
 }
+
+
+
+
+
+
+
